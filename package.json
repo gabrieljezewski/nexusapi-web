@@ -1,4 +1,5 @@
 {
+  "homepage": "https://gabrieljezewski.github.io/nexusapi-web",
   "name": "nexusapi-web",
   "private": true,
   "version": "0.0.0",
@@ -7,10 +8,13 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "antd": "^5.22.3",
+    "gh-pages": "^6.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.0.2",
